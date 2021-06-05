@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity">
+
+
+    <EditText
+        android:id="@+id/emailSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:ems="15"
+        android:hint="Email"
+        android:padding="12dp"
+        android:textColor="#E91E63"
+        android:textColorHint="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="15"
+        android:hint="Password"
+        android:padding="12dp"
+        android:textColor="#E91E63"
+        android:textColorHint="#E91E63"
+        app:layout_constraintEnd_toEndOf="@+id/emailSignIn"
+        app:layout_constraintStart_toStartOf="@+id/emailSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/emailSignIn" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#E91E63"
+        android:textSize="20dp"
+        android:text="Sign In Now"
+        android:textAllCaps="false"
+        android:layout_margin="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/passSignIn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/passSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/passSignIn" />
+
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Sign In"
+        android:textColor="#E91E63"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
